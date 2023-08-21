@@ -68,7 +68,7 @@ function validCoupon()
     }
 }
 
-inputCoupon.addEventListener("input", validCoupon);
+inputCoupon.addEventListener("click", validCoupon);
 
 function home() {
     window.location.href = "index.html";
