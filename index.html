@@ -17,22 +17,22 @@
 <body class="font">
   <main>
     <section class="bg-orange-50 w-auto">
-      <div class="grid grid-cols-2 justify-items-center p-36">
+      <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 justify-items-center p-36">
         <div>
-          <h2 class="font-semibold text-slate-700 gap-3">---SALE FEVER---</h2>
+          <h2 class="font-semibold text-slate-600 gap-3 ml-12">---SALE FEVER---</h2>
           <h1 class="font-extrabold text-3xl my-8">Purchase TK 200 or <br>above & get <span class="text-pink-500">20%
               off</span></h1>
-          <p>Use Promo Code<button class=" bg-pink-500 rounded-lg text-white px-6 py-3">SELL200</button></p>
+          <p class="font-medium text-slate-700">Use Promo Code<button class=" bg-pink-500 rounded-lg text-white px-6 py-3 ml-4">SELL200</button></p>
         </div>
         <img class="w-96 h-80 mr-10 " src="./images/Summer 1.png" alt="">
 
       </div>
       <div></div>
     </section>
-    <section class="flex justify-evenly">
+    <section class="md:flex-row lg:flex justify-evenly">
       <section>
-        <h2 class="text-2xl font-bold ">Kitchenware</h2>
-        <div class="grid grid-cols-3 gap-2 my-14">
+        <h2 class="text-2xl font-bold mt-10">Kitchenware</h2>
+        <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-2 my-5">
 
 
 
@@ -43,11 +43,11 @@
 
             <div class="card-body items-center text-center">
               <div class="rating">
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2000" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-21111" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-223" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-22221" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2321" class="mask mask-star-2 bg-orange-400" />
               </div>
               <h2 class="card-title text-sm">K. Accessories</h2>
               <p>39.00 TK</p>
@@ -99,7 +99,7 @@
        
         <h2 class="text-2xl font-bold ">Sportswear</h2>
         
-        <div class="grid grid-cols-3 gap-2 my-14">
+        <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-2 my-5">
          
 
             <div class="card w-60 h-80 shadow-xl" onclick="cart(this)">
@@ -159,13 +159,13 @@
 
         </div>
       </section>
-      <section class="flex flex-col gap-5 -ml-28 mr-24 mt-24 ">
+      <section class="flex flex-col gap-5 lg:-ml-28 mr-24 mt-24 ">
         <div class="card card-compact w-80 h-32 bg-base-100 shadow-2xl">
           <p class="pl-3 pt-8">Have coupon?</p>
           <div class="form-control">
 
             <label class="input-group pl-3 pt-4">
-              <input type="text" placeholder="Coupon code" class="input input-bordered " />
+              <input type="text" id="coupon-code" placeholder="Coupon code" class="input input-bordered ">
               <button id="coupon" disabled class="btn bg-pink-500 text-white">Apply</button>
             </label>
           </div>
