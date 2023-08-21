@@ -36,7 +36,7 @@
 
 
 
-          <div class="card w-60 h-72 shadow-xl" onclick="cart(this)">
+          <div class="card w-60 h-80 shadow-xl" onclick="cart(this)">
             <figure class="px-10 py-20 bg-base-200 mx-4 mt-4 rounded-2xl ">
               <img class="w-24 h-24" src="./images/prod1.png" alt="Shoes" />
             </figure>
@@ -59,7 +59,7 @@
 
 
 
-          <div class="card w-60 h-72 shadow-xl" onclick="cart(this)">
+          <div class="card w-60 h-80 shadow-xl" onclick="cart(this)">
             <figure class="px-10 py-20 bg-base-200 mx-4 mt-4 rounded-2xl ">
               <img class="w-24 h-24" src="./images/prod2.png" alt="" />
             </figure>
@@ -77,7 +77,7 @@
           </div>
 
 
-          <div class="card w-60 h-72 shadow-xl" onclick="cart(this)">
+          <div class="card w-60 h-80 shadow-xl" onclick="cart(this)">
             <figure class="px-10 py-20 bg-base-200 mx-4 mt-4 rounded-2xl ">
               <img class="w-24 h-24" src="./images/prod3.png" alt="Shoes" />
             </figure>
@@ -102,7 +102,7 @@
         <div class="grid grid-cols-3 gap-2 my-14">
          
 
-            <div class="card w-60 h-72 shadow-xl" onclick="cart(this)">
+            <div class="card w-60 h-80 shadow-xl" onclick="cart(this)">
               <figure class="px-10 py-20 bg-base-200 mx-4 mt-4 rounded-2xl ">
                 <img class="w-24 h-24" src="./images/prod4.png" alt="Shoes" />
               </figure>
@@ -120,7 +120,7 @@
             </div>
         
           
-            <div class="card w-60 h-72 shadow-xl" onclick="cart(this)">
+            <div class="card w-60 h-80 shadow-xl" onclick="cart(this)">
               <figure class="px-10 py-20 bg-base-200 mx-4 mt-4 rounded-2xl ">
                 <img class="w-24 h-24" src="./images/prod5.png" alt="Shoes" />
               </figure>
@@ -138,7 +138,7 @@
             </div>
          
         
-            <div class="card w-60 h-72 shadow-xl" onclick="cart(this)" >
+            <div class="card w-60 h-80 shadow-xl" onclick="cart(this)" >
               <figure class="px-10 py-20 bg-base-200 mx-4 mt-4 rounded-2xl ">
                 <img class="w-24 h-24" src="./images/prod6.png" alt="Shoes" />
               </figure>
@@ -175,13 +175,26 @@
             <div class="items list-decimal" id="items"></div>
             <hr class="m-4">
             <div class="cart-box list-decimal">
-              <h6>Total price: <span id="total">00</span></h6>
-              <h6>Discount :<span>00</span></h6>
-              <h5>Total: <span id="total">00</span></h5>
+              <h6>Total price: <span id="total">00 </span>TK</h6>
+              <h6>Discount :<span id="discount">00</span>TK</h6>
+              <h5>Total: <span id="new-total">00</span>TK</h5>
             </div>
             <hr class="m-4">
             <div class="card-actions">
-              <button class="btn text-white bg-pink-500 px-16 -mb-4">Make Purchase</button>
+              <button  id="purchase-btn" class="btn text-white bg-pink-500 px-16 -mb-4" disabled><label for="my_modal_6"> Make Purchase</label></button>
+             
+              <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+                    <div class="modal">
+                        <div class="modal-box">
+                            <img class="ml-44" src="./images/congo.png" alt="">
+                            <h3 class="font-bold text-lg text-center">Congratulations</h3>
+                            <p class="text-center">Your Purchase the product</p>
+                        
+                            <div class="modal-action justify-center">
+                                <label for="my_modal_6" id="home-button" class="btn bg-pink-600 text-white">Go Home</label>
+                            </div>
+                        </div>
+                    </div>
             </div>
 
           </div>
